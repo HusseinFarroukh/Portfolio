@@ -51,7 +51,7 @@ function Projects() {
     return (
         <div className="bg-black">
             <section id="projects" className="relative text-white py-20 px-8">
-                <div className="pointer-events-none absolute inset-x-0 -top-24 h-24 bg-gradient-to-b from-black via-black/70 to-transparent" />
+                <div className="pointer-events-none absolute inset-x-0 -top-24 h-24 bg-linear-to-b from-black via-black/70 to-transparent" />
                 
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-5xl font-bold text-center mb-16">My Projects</h2>

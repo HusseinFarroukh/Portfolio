@@ -1,15 +1,15 @@
 import "./index.css";
 function About() {
     return (
-        <body className="bg-black m-0 p-0">
-            <div className="bg-gradient-to-b from-red-300 to-black-500/0 opacity-25 h-40"></div>
+        <div className="bg-black m-0 p-0">
+            <div className="bg-linear-to-b from-red-300 to-black-500/0 opacity-25 h-40"></div>
             <section id="about" className="bg-black text-white flex items-center py-20 px-8">
             
             {/* Image */}
             <div className="w-1/2 flex justify-center">
                 <div className=" overflow-hidden">
                     <img 
-                        src="/personal image 2.jpeg" 
+                        src="/personal-image-2.jpeg" 
                         alt="" 
                         className="w-full max-h-full object-fit max-w-md hover:scale-110 transition duration-300"
                     />
@@ -25,7 +25,7 @@ function About() {
 
         </section>
             
-        </body>
+        </div>
         
     )
 }
