@@ -9,7 +9,7 @@ function About() {
             <div className="w-1/2 flex justify-center">
                 <div className=" overflow-hidden">
                     <img 
-                        src="src/assets/personal image 2.jpeg" 
+                        src="/personal image 2.jpeg" 
                         alt="" 
                         className="w-full max-h-full object-fit max-w-md hover:scale-110 transition duration-300"
                     />

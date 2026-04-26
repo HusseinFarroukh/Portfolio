@@ -8,7 +8,7 @@ function Header() {
                 <video autoPlay muted loop src="src/assets/1.mp4" className="absolute top-0 left-0 w-full h-full object-cover"></video>
                 <nav className="absolute z-10 text-white flex justify-between items-center w-full p-4 pr-50 pl-50">
                     <div className="">                    
-                        <a href=""><img src="src/assets/HF.png" width={100} alt="" /></a>
+                        <a href=""><img src="/HF.png" width={100} alt="" /></a>
                     </div>
                     <div className="p-4">
                         <a href="#home" className="hover:text-[20px] transition-all ease-in-out duration-300">Home</a>
@@ -36,7 +36,7 @@ function Header() {
                 <section className="absolute z-10 text-white text-center w-[30] p-4 bottom-10 left-1/2 transform -translate-x-1/2">
                     <div className="flex flex-col justify-center items-center">
                         <h1 className="text-center mb-5">Click to see more</h1>
-                        <a href="#about" ><img src="src/assets/arrow-down.png" width={30} alt=""  className="hover:scale-125 transition-all ease-in-out duration-300"/></a>
+                        <a href="#about" ><img src="/arrow-down.png" width={30} alt=""  className="hover:scale-125 transition-all ease-in-out duration-300"/></a>
                     </div>
                 </section>
                             <div className="bg-gradient-to-b from-red-300 to-black-500/0 opacity-25 h-30"></div>
