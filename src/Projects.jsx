@@ -4,28 +4,28 @@ import "./index.css";
 function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
     const [selectedImage, setSelectedImage] = useState(null);
-    const [projects, setProjects] = useState([]);
-
-    // Load projects from localStorage on mount and sync with dashboard
-    useEffect(() => {
+    const [projects, setProjects] = useState(() => {
         const savedProjects = localStorage.getItem("portfolio_projects");
         if (savedProjects) {
             try {
                 const parsedProjects = JSON.parse(savedProjects);
                 // Ensure all projects have required fields
-                const validatedProjects = parsedProjects.map(p => ({
+                return parsedProjects.map(p => ({
                     ...p,
                     images: p.images || [p.image, p.image, p.image],
                     fullDescription: p.fullDescription || p.description,
                     link: p.link || "#"
                 }));
-                setProjects(validatedProjects);
             } catch (e) {
                 console.error("Error loading projects:", e);
+                return [];
             }
         }
+        return [];
+    });
 
-        // Listen for storage changes (when updated from dashboard)
+    // Listen for storage changes (when updated from dashboard)
+    useEffect(() => {
         const handleStorageChange = () => {
             const updated = localStorage.getItem("portfolio_projects");
             if (updated) {
